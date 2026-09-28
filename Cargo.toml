@@ -1,0 +1,12 @@
+[package]
+name = "ascii"
+version = "1.0.0"
+edition = "2024"
+authors = ["Kody Brown <thewizard@wasatchwizard.com>"]
+repository = "https://github.com/kodybrown/ascii-rust"
+description = "Display a CP437 character chart and box-drawing examples"
+license = "MIT"
+
+[dependencies]
+clap = { version = "4.6.7", features = ["derive"] }
+crossterm = { version = "0.29", default-features = false, features = ["events", "windows"] }
